@@ -19,7 +19,7 @@ const ScrollToTop = () => {
 
 export default function App() {
   return (
-<Router basename="/raisewellness">
+<Router>
       <ScrollToTop />
       <div className="min-h-screen bg-brand-forest selection:bg-brand-gold selection:text-brand-forest text-brand-cream font-sans">
         <Navbar />
