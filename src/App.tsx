@@ -31,7 +31,7 @@ export default function App() {
             <Route path="/masters" element={<Masters />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/booking" element={<Booking />} />
-          </Routes>
+          </Router>
         </main>
 
         <footer className="py-12 border-t border-brand-gold/10 text-center">
