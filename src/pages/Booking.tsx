@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SectionTitle, Button } from './Home';
 import { CheckCircle2, Calendar, Clock, User, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Booking = () => {
   const [step, setStep] = useState(1);
@@ -34,7 +35,9 @@ export const Booking = () => {
           <p className="text-sm opacity-60 leading-relaxed mb-12">
             Благодарим вас за выбор нашего салона. Наш консьерж свяжется с вами в течение 15 минут для подтверждения времени и деталей вашего визита.
           </p>
-          <Button primary onClick={() => window.location.href = '/'}>На главную</Button>
+          <Link to="/">
+  <Button primary>На главную</Button>
+</Link>
         </motion.div>
       </div>
     );
