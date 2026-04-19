@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -24,8 +24,8 @@ export default function App() {
       <div className="min-h-screen bg-brand-forest selection:bg-brand-gold selection:text-brand-forest text-brand-cream font-sans">
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
+<Router basename="/raisewellness">
+  <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/masters" element={<Masters />} />
